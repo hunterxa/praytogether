@@ -1,0 +1,41 @@
+.group-card {
+  background-color: white;
+  width: 80%;
+  padding: 0.8rem 0;
+  border-radius: 1rem;
+  box-shadow: 0px 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
+}
+
+.group-card-info {
+  margin-left: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.group-card-image {
+  border-radius: 0.8rem;
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
+.group-card-info-text {
+  margin-left: 0.8rem;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.group-card-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.group-card-members {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+

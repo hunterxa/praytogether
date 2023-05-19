@@ -1,0 +1,83 @@
+.userhome {
+  background: linear-gradient(180deg, #151E69 42%, #FFFFFF 87.2%);
+}
+
+.userhome-header-image {
+  width: 100%;
+}
+
+.userhome-greeting {
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 1.75rem;
+  color: white;
+  width: 85%;
+  margin-top: 0;
+  text-align: left;
+}
+
+.userhome-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: -1.2rem;
+}
+
+.userhome-buttons-top {
+  display: flex;
+  gap: 1rem;
+}
+
+.userhome-buttons-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.userhome-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userhome-button-card {
+  margin-top: -1rem;
+  background-color: white;
+  height: 6rem;
+  width: 10.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.6rem;
+  box-shadow: 0rem 0.125rem 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+.userhome-button-card-image {
+  object-position: center 88%;
+  object-fit: cover;
+  height: 5.5rem;
+  width: 9.9rem;
+  border-radius: 0.6rem;
+}
+
+.userhome-buttons p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.userhome-buttons-top-title {
+  color: white;
+}
+
+.userhome-buttons-bottom-title {
+  color: black;
+}
+
+#bottom-card {
+  margin-bottom: -1rem;
+  width: 18rem;
+}
+
+#bottom-image {
+  width: 17.3rem;
+}

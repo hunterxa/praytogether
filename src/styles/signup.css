@@ -1,0 +1,119 @@
+.signup {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #DAE4EB 50.05%, #FFFFFF 88.74%);
+}
+
+.signup-image {
+  width: 85%;
+  min-width: 194px;
+  max-width: 288px;
+}
+
+.signup-title {
+  margin-top: 0.5rem;
+  font-family: 'DM Sans', 'sans-serif';
+  font-size: 2rem;
+}
+
+.signup-error {
+  color: #ff4400;
+  font-family: 'DM Sans', sans-serif;
+  max-width: 80%;
+  margin-top: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 85%;
+  max-width: 300px;
+  min-width: 194px;
+  margin-bottom: 2rem;
+}
+
+.signup-form input {
+  width: 85%;
+  border: none;
+  border-radius: 1rem;
+  height: 3rem;
+  padding-left: 1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.signup-form input:focus {
+  outline: none;
+}
+
+.signup-form button {
+  margin-top: 1rem;
+  width: 85%;
+  border: none;
+  border-radius: .5rem;
+  background-color: #F4BC71;
+  color: #fdfdfd;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-family: 'DM Sans', sans-serif;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,0.25);
+}
+
+.signup-options {
+  margin-top: -1rem;
+  margin-bottom: 0.5rem;
+}
+
+.signup-options-button {
+  font-family: 'DM Sans', sans-serif;
+  border: none;
+  background: none;
+  text-decoration: underline;
+  margin-top: -1rem;
+  font-size: 0.85rem;
+}
+
+.signup-options a {
+  font-size: 0.85rem;
+}
+
+.complete-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.complete-account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80%;
+}
+
+.complete-account-form input {
+  border: none;
+  border-radius: 0.75rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-family: 'DM Sans', 'sans-serif';
+  padding-left: 1rem;
+  /* box-shadow: 0 .125rem .25rem rgba(0,0,0,0.25); */
+}
+
+.complete-account-form button {
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'DM Sans', sans-serif;
+  background-color: #F4BC71;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,0.25);
+} 

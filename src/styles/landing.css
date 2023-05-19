@@ -1,0 +1,93 @@
+.landing {
+  background: linear-gradient(180deg, #FDFDFD 32.24%, #F5F0E7 65.95%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-header-image {
+  width: 70%;
+  max-width: 288px;
+  min-width: 194px;
+  margin-top: 7vh;
+}
+
+.landing p, h1, h2, ul, li {
+  font-family: 'Signika Negative', sans-serif;
+}
+
+.landing-copy {
+  color: #8DB1C7;
+  font-size: 1.125rem;
+  text-align: center;
+  width: 70%;
+  max-width: 288px;
+  min-width: 194px;
+}
+
+.landing-title {
+  margin-top: 0;
+  font-size: 2.5rem;
+  color: #262626;
+}
+
+.landing-buttons {
+  margin-top: -0.2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-shrink: 0;
+  gap: 0.5rem;
+  width: 75%;
+  max-width: 300px;
+  min-width: 220px;
+  padding: 0 1rem;
+}
+
+.landing a {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-button {
+  background-color: #F4BC71;
+  border: none;
+  border-radius: 5px;
+  width: 8rem;
+  height: 3rem;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,0.25);
+  
+  color: #FDFDFD;
+  font-size: 1.6rem;
+}
+
+.landing-button:active {
+  transform: translate(0.125rem, 0.125rem);
+}
+
+.landing-features {
+  width: 75%;
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+}
+
+.landing-features h2 {
+  text-align: left;
+  font-size: 2rem;
+  color: #262626;
+}
+
+.landing-features ul {
+  margin-top: -0.25rem;
+  margin-left: -1.25rem;
+}
+
+.landing-features li {
+  margin-bottom: 0.6rem;
+}
+
+.landing-footer-image {
+  width: 100%;
+}

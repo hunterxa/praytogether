@@ -1,0 +1,14 @@
+.entire-page {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-transform:active {
+  transform: translate(0.125rem, 0.125rem);
+}
+
+.no-focus:focus {
+  outline: none;
+}

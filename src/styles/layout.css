@@ -1,0 +1,8 @@
+.layout-wrapper {
+  max-width: 412px;
+
+  /* Styles to set the footer at the bottom of the page */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

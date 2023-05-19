@@ -1,0 +1,72 @@
+.login {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #DAE4EB 50.05%, #FFFFFF 88.74%);
+}
+
+.login-image {
+  width: 85%;
+  min-width: 194px;
+  max-width: 288px;
+}
+
+.login-title {
+  margin-top: 0.5rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2rem;
+}
+
+.login-message {
+  font-family: 'DM Sans', sans-serif;
+  color: red;
+  font-size: 1.2rem;
+  width: 80%;
+  text-align: center;
+  margin-top: -0.5rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 85%;
+  max-width: 300px;
+  min-width: 194px;
+  margin-bottom: 2rem;
+}
+
+.login-form input {
+  width: 85%;
+  border: none;
+  border-radius: 0.75rem;
+  height: 3rem;
+  padding-left: 1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;;
+}
+
+.login-form input:focus {
+  outline: none;
+}
+
+.login-form button {
+  margin-top: 1rem;
+  width: 85%;
+  border: none;
+  border-radius: .5rem;
+  background-color: #F4BC71;
+  color: #fdfdfd;
+  padding: 0.8rem 0;
+  font-size: 1.5rem;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.login-to-signup {
+  margin-top: -1rem;
+  text-decoration: underline;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+}
