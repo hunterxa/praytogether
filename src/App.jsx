@@ -16,6 +16,7 @@ import UserProfile, { loader as profileLoader } from './pages/user/UserProfile'
 import GroupsLayout from './layouts/GroupsLayout'
 import Groups, { loader as groupsLoader } from './pages/user/Groups'
 import GroupPosts, { loader as groupPostsLoader } from './pages/user/GroupPosts'
+import CreateGroup, {loader as createGroupLoader, action as createGroupAction} from './pages/user/CreateGroup'
 import Error from './components/Error'
 
 import './App.css'
@@ -61,7 +62,9 @@ const router = createBrowserRouter(createRoutesFromElements(
       />
       <Route
         path="create"
-        element={<h1>Create a group here</h1>}
+        loader={createGroupLoader}
+        action={createGroupAction}
+        element={<CreateGroup />}
       />
       <Route
         path=":groupId"
@@ -76,6 +79,10 @@ const router = createBrowserRouter(createRoutesFromElements(
           element={<h1>Create a post here</h1>}
         />
       </Route>
+      <Route
+        path="join"
+        element={<h1>Join a group</h1>}
+      />
     </Route>
     <Route 
       path="profile" 

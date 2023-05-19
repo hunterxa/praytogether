@@ -11,6 +11,7 @@ import {
   getDoc,
   getDocs,
   setDoc,
+  addDoc,
   query,
   where
 } from "firebase/firestore"
@@ -111,6 +112,19 @@ export function signOutCurrentUser() {
 }
 
 /*** Firestore data creation and retrieval ***/
+
+export async function createNewGroup(groupName, groupType) {
+  const userDocRef = doc(db, "users", auth.currentUser.uid)
+  const groupDocRef = await addDoc(collection(db, "groups"), {
+    name: groupName,
+    type: groupType,
+    members: [userDocRef],
+    posts: [],
+    owner: userDocRef
+  })
+
+  return groupDocRef.id
+}
 
 export async function getUsersGroups(userId) {
   const groupsRef = collection(db, "groups")
