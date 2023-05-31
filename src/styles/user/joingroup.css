@@ -1,0 +1,72 @@
+.join-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.join-group-title {
+  color: white;
+}
+
+.join-group-error {
+  color: rgb(227, 53, 47);
+  font-size: 1.1rem;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.join-group-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.join-group-input {
+  width: 75%;
+  height: 3rem;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+}
+
+.join-group-button {
+  width: 45%;
+  height: 3rem;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  background-color: #F4BC71;
+  color: white;
+  border: none;
+}
+
+.join-info {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 .125rem .125rem 0 rgba(0,0,0,.1);
+  padding: 1rem;
+}
+
+.join-info-card-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.join-info-group-name {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+.join-info-group-owner,
+.join-info-group-members {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #484950;
+}
+
+.join-info-form {
+  display: flex;
+  justify-content: center;
+}

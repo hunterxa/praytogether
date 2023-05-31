@@ -19,3 +19,7 @@ a {
   text-decoration: unset;
   color: unset;
 }
+
+input:focus {
+  outline: none;
+}

@@ -22,6 +22,10 @@
   font-family: 'DM Sans', sans-serif;
 }
 
+.groups-join-button {
+  margin-right: 1rem;
+}
+
 .groups h2 {
   color: white;
   margin-bottom: 0;

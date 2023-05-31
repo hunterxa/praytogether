@@ -12,6 +12,8 @@ import {
   getDocs,
   setDoc,
   addDoc,
+  updateDoc,
+  arrayUnion,
   query,
   where
 } from "firebase/firestore"
@@ -120,10 +122,33 @@ export async function createNewGroup(groupName, groupType) {
     type: groupType,
     members: [userDocRef],
     posts: [],
-    owner: userDocRef
+    owner: userDocRef,
+    invites: []
   })
 
   return groupDocRef.id
+}
+
+//TODO: check if the group is closed
+export async function addCurrentUserToGroup(groupId) {
+  const groupDocRef = doc(db, "groups", groupId)
+  const groupDocSnap = await getDoc(groupDocRef)
+  if (!groupDocSnap.exists()) {
+    throw new Error("No group with that id found")
+  }
+  if (!checkUserLoggedIn()) {
+    throw new Error("User not logged in")
+  }
+
+  const userDocRef = doc(db, "users", auth.currentUser.uid)
+  if (groupDocSnap.data().members.includes(userDocRef)) {
+    console.log("user already in group")
+    throw new Error("You are already a member of that group")
+  }
+
+  await updateDoc(groupDocRef, {
+    members: arrayUnion(userDocRef)
+  })
 }
 
 export async function getUsersGroups(userId) {
@@ -171,4 +196,23 @@ export async function getUserFromFirestoreById(userId) {
   }
 
   return {...userDocSnap.data(), id: userDocSnap.id}
+}
+
+export async function getUserFromFirestoreByRef(userRef) {
+  const userDocSnap = await getDoc(userRef)
+  if (!userDocSnap.exists()) {
+    return null
+  }
+
+  return {...userDocSnap.data(), id: userDocSnap.id}
+}
+
+export async function getGroupById(groupId) {
+  const groupDocRef = doc(db, "groups", groupId)
+  const groupDocSnap = await getDoc(groupDocRef)
+  if (!groupDocSnap.exists()) {
+    return null
+  }
+
+  return {...groupDocSnap.data(), id: groupDocSnap.id}
 }

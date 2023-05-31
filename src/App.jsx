@@ -17,6 +17,8 @@ import GroupsLayout from './layouts/GroupsLayout'
 import Groups, { loader as groupsLoader } from './pages/user/Groups'
 import GroupPosts, { loader as groupPostsLoader } from './pages/user/GroupPosts'
 import CreateGroup, {loader as createGroupLoader, action as createGroupAction} from './pages/user/CreateGroup'
+import JoinGroup, { loader as joinGroupLoader, action as joinGroupAction } from './pages/user/JoinGroup'
+import JoinInfo, { loader as joinInfoLoader, action as joinInfoAction } from './pages/user/JoinInfo'
 import Error from './components/Error'
 
 import './App.css'
@@ -80,8 +82,16 @@ const router = createBrowserRouter(createRoutesFromElements(
         />
       </Route>
       <Route
+        path="join/:groupId"
+        loader={ joinInfoLoader }
+        action={ joinInfoAction }
+        element={<JoinInfo />}
+      />
+      <Route
         path="join"
-        element={<h1>Join a group</h1>}
+        loader={joinGroupLoader}
+        action={joinGroupAction}
+        element={<JoinGroup />}
       />
     </Route>
     <Route 
